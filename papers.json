@@ -4,7 +4,9 @@
     "authors": "Ilse, Tomczak, Welling",
     "venue": "ICML",
     "year": 2018,
-    "topics": ["Multiple Instance Learning"],
+    "topics": [
+      "Multiple Instance Learning"
+    ],
     "url": "https://proceedings.mlr.press/v80/ilse18a/ilse18a.pdf"
   },
   {
@@ -12,7 +14,9 @@
     "authors": "Shao, Bian, Chen, Wang, Zhang, Ji, Zhang",
     "venue": "NeurIPS",
     "year": 2021,
-    "topics": ["Multiple Instance Learning"],
+    "topics": [
+      "Multiple Instance Learning"
+    ],
     "url": "https://proceedings.neurips.cc/paper/2021/file/10c272d06794d3e5785d5e7c5356e9ff-Paper.pdf"
   }
 ]
