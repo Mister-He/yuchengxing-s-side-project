@@ -751,8 +751,29 @@ body::before {
 <script>
 // ═══════════════════════════════════════════
 //  📄 PAPER DATA — 从 papers.json 加载
+//  本地 fallback：fetch 失败时使用内嵌数据
 // ═══════════════════════════════════════════
 let papers = [];
+
+// ⬇️ 内嵌备份（与 papers.json 保持同步）
+const FALLBACK_PAPERS = [
+  {
+    "title": "Attention-based Deep Multiple Instance Learning",
+    "authors": "Ilse, Tomczak, Welling",
+    "venue": "ICML",
+    "year": 2018,
+    "topics": ["Multiple Instance Learning"],
+    "url": "https://proceedings.mlr.press/v80/ilse18a/ilse18a.pdf"
+  },
+  {
+    "title": "TransMIL: Transformer based Correlated Multiple Instance Learning for Whole Slide Image Classification",
+    "authors": "Shao, Bian, Chen, Wang, Zhang, Ji, Zhang",
+    "venue": "NeurIPS",
+    "year": 2021,
+    "topics": ["Multiple Instance Learning"],
+    "url": "https://proceedings.neurips.cc/paper/2021/file/10c272d06794d3e5785d5e7c5356e9ff-Paper.pdf"
+  }
+];
 
 // ═══════════════════════════════════════════
 //  Topic → CSS class mapping
@@ -922,16 +943,11 @@ document.getElementById('clearAll').addEventListener('click', () => {
 async function init() {
   try {
     const res = await fetch('papers.json');
+    if (!res.ok) throw new Error(res.status);
     papers = await res.json();
   } catch (e) {
-    console.error('Failed to load papers.json:', e);
-    document.getElementById('paperList').innerHTML = `
-      <div class="empty-state">
-        <div class="icon">⚠️</div>
-        <h3>无法加载论文数据</h3>
-        <p>请确保 papers.json 与 index.html 在同一目录下</p>
-      </div>`;
-    return;
+    console.warn('fetch papers.json failed, using fallback:', e);
+    papers = FALLBACK_PAPERS;
   }
   allVenues = [...new Set(papers.map(p => p.venue))].sort();
   allTopics = [...new Set(papers.flatMap(p => p.topics))].sort();
