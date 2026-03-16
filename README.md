@@ -2,7 +2,7 @@
 
 A curated collection of papers in computational pathology. Searchable and filterable by venue, topic, and year.
 
-🔗 **Browse online**: [https://你的用户名.github.io/computational-pathology-papers/](https://yucheng-xing.github.io/Paper-of-Computational-Pathology/)
+🔗 **Browse online**: [https://yucheng-xing.github.io/Paper-of-Computational-Pathology/](https://yucheng-xing.github.io/Paper-of-Computational-Pathology/)
 
 ---
 
