@@ -1,18 +1,18 @@
 [
   {
-    "title": "Attention Is All You Need",
-    "authors": "Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin",
-    "venue": "NeurIPS",
-    "year": 2017,
-    "topics": ["Transformer", "LLM"],
-    "url": "https://arxiv.org/abs/1706.03762"
+    "title": "Attention-based Deep Multiple Instance Learning",
+    "authors": "Ilse, Tomczak, Welling",
+    "venue": "ICML",
+    "year": 2018,
+    "topics": ["Multiple Instance Learning"],
+    "url": "https://proceedings.mlr.press/v80/ilse18a/ilse18a.pdf"
   },
   {
-    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
-    "authors": "Devlin, Chang, Lee, Toutanova",
-    "venue": "NAACL",
-    "year": 2019,
-    "topics": ["LLM", "Representation Learning"],
-    "url": "https://arxiv.org/abs/1810.04805"
+    "title": "TransMIL: Transformer based Correlated Multiple Instance Learning for Whole Slide Image Classification",
+    "authors": "Shao, Bian, Chen, Wang, Zhang, Ji, Zhang",
+    "venue": "NeurIPS",
+    "year": 2021,
+    "topics": ["Multiple Instance Learning"],
+    "url": "https://proceedings.neurips.cc/paper/2021/file/10c272d06794d3e5785d5e7c5356e9ff-Paper.pdf"
   },
 ]
