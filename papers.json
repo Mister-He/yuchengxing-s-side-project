@@ -18,5 +18,13 @@
       "Multiple Instance Learning"
     ],
     "url": "https://proceedings.neurips.cc/paper/2021/file/10c272d06794d3e5785d5e7c5356e9ff-Paper.pdf"
-  }
+  },
+  {
+  "title": "Mixture of Mini Experts: Overcoming the Linear Layer Bottleneck in Multiple Instance Learning",
+  "authors": "Shao, Runevic, Chen, Williamson, Kim, Song, Mahmood",
+  "venue": "ICLR",
+  "year": 2026,
+  "topics": ["Multiple Instance Learning"],
+  "url": "https://openreview.net/forum?id=TODO"
+}
 ]
